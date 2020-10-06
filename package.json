@@ -1,0 +1,33 @@
+{
+    "name": "code",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "watch": "node-sass --watch css/style.scss css/style.css",
+        "build": "nodemon --exec babel-node ./js/* ",
+        "start": "concurrently \"npm run watch\" \"npm run build\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kchmaya/html-css-animation.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kchmaya/html-css-animation/issues"
+    },
+    "homepage": "https://github.com/kchmaya/html-css-animation#readme",
+    "dependencies": {
+        "concurrently": "^5.0.0",
+        "gsap": "^3.0.1",
+        "node-sass": "^4.13.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.7.4",
+        "@babel/core": "^7.7.4",
+        "@babel/node": "^7.7.4",
+        "@babel/preset-env": "^7.7.4",
+        "nodemon": "^2.0.1"
+    }
+}
