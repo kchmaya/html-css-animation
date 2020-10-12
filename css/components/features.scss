@@ -1,33 +1,37 @@
 @import "../variables.scss";
 .features {
-    margin-top: 20vh;
+    height: 100vh;
     .features-inner {
+        margin-top: 33vh;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: flex-end;
+        // align-items: flex-end;
         .features-content {
-            width: 33%;
+            width: 50%;
             @media (max-width: $widescreen) {
-                width: 40%;
+                width: 60%;
             }
             h3 {
-                font-family: 'Playfair Display';
+                font-family: 'Roboto Condensed', sans-serif;
                 color: $blue;
-                font-size: 2.6rem;
-                line-height: 3.4rem;
-                margin: 0 0 40px;
+                font-size: 3.375rem;
+                line-height: 3.5rem;
+                text-transform: uppercase;
+                margin: 0 0 30px;
             }
             p {
-                line-height: 1.8rem;
+                font-size: 1.125rem;
+                line-height: 2.25rem;
                 font-weight: 300;
                 color: $blue;
-                margin-bottom: 88px;
+                margin-bottom: 70px;
                 @media (max-width: $widescreen) {
                     padding-right: 60px;
                 }
             }
             .btn-row {
                 a {
+                    font-size: 1.125rem;
                     color: $blue;
                     text-decoration: none;
                     font-weight: 600;

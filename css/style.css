@@ -632,30 +632,32 @@ body {
 .features {
   height: 100vh; }
   .features .features-inner {
-    margin-top: 20vh;
+    margin-top: 33vh;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; }
+    justify-content: flex-end; }
     .features .features-inner .features-content {
-      width: 33%; }
+      width: 50%; }
       @media (max-width: 1440px) {
         .features .features-inner .features-content {
-          width: 40%; } }
+          width: 60%; } }
       .features .features-inner .features-content h3 {
-        font-family: 'Playfair Display';
+        font-family: 'Roboto Condensed', sans-serif;
         color: #233567;
-        font-size: 2.6rem;
-        line-height: 3.4rem;
-        margin: 0 0 40px; }
+        font-size: 3.375rem;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+        margin: 0 0 30px; }
       .features .features-inner .features-content p {
-        line-height: 1.8rem;
+        font-size: 1.125rem;
+        line-height: 2.25rem;
         font-weight: 300;
         color: #233567;
-        margin-bottom: 88px; }
+        margin-bottom: 70px; }
         @media (max-width: 1440px) {
           .features .features-inner .features-content p {
             padding-right: 60px; } }
       .features .features-inner .features-content .btn-row a {
+        font-size: 1.125rem;
         color: #233567;
         text-decoration: none;
         font-weight: 600; }
