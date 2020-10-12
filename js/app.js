@@ -39,7 +39,7 @@ bannerTL.from([bannerAddition, banner], {
     })
     .from(h1Line, {
         dalay: -0.4,
-        y: 80,
+        y: 110,
         duration: 0.8,
         ease: 'power3.out',
         stagger: {
