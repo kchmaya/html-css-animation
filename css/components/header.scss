@@ -13,8 +13,8 @@ header {
             justify-content: space-between;
             width: 100%;
             .logo {
-                font-family: 'Playfair Display', 'Poppins';
-                font-size: 1.875rem;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 2.375rem;
                 font-weight: 700;
                 color: $blue;
             }
@@ -38,7 +38,8 @@ header {
                                 margin: 0 24px;
                             }
                             a {
-                                font-size: .875rem;
+                                font-family: 'Roboto Condensed', sans-serif;
+                                font-size: 1.1875rem;
                                 padding: 8px 0;
                                 text-decoration: none;
                                 font-weight: 600;
@@ -48,41 +49,27 @@ header {
                     }
                 }
             }
-            .nav-logins {
+            .nav-social {
                 display: flex;
                 align-items: center;
-                .login {
+                .social {
                     a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 32px;
+                        width: 32px;
                         font-size: .875rem;
-                        padding: 8px 0;
                         text-decoration: none;
                         font-weight: 600;
-                        color: $blue;
-                        margin-right: 48px;
-                        @media (max-width: $widescreen) {
-                            margin-right: 25px;
-                        }
-                    }
-                }
-                .apply {
-                    a {
-                        display: inline-block;
-                        height: 52px;
-                        line-height: 52px;
-                        font-size: .875rem;
-                        padding: 0 32px;
-                        text-decoration: none;
-                        font-weight: 600;
-                        color: $blue;
                         border: 2px solid $blue;
-                        border-radius: 100px;
+                        border-radius: 50%;
+                        color: $blue;
+                        margin-right: 15px;
                         transition: 0.2s ease-in-out;
                         &:hover {
                             background: $blue;
                             color: $white;
-                        }
-                        @media (max-width: $widescreen) {
-                            padding: 0 24px;
                         }
                     }
                 }
