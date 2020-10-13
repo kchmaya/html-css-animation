@@ -5,17 +5,8 @@
     @media (max-width: $widescreen) {
         height: 85vh;
     }
-    .footer-addition-bg {
-        background: $blue;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: 100%;
-    }
     .footer-bg {
-        background: $lPink;
+        background: $yellow;
         position: absolute;
         left: 0;
         right: 0;
@@ -44,7 +35,7 @@
             .footer-list {
                 h3 {
                     font-family: 'Roboto Condensed', sans-serif;
-                    color: $blue;
+                    color: $orange;
                     font-size: 3.375rem;
                     line-height: 3.5rem;
                     text-transform: uppercase;
@@ -59,7 +50,7 @@
                     a {
                         padding-left: 20px;
                         font-size: 1.125rem;
-                        color: $blue;
+                        color: $orange;
                         text-decoration: none;
                         text-transform: uppercase;
                         font-weight: 600;
