@@ -55,17 +55,6 @@ bannerTL.from([bannerAddition, banner], {
         stagger: {
             amount: 0.2
         }
-    })
-    .to([playVideo, playVideoCover], {
-        delay: -0.6,
-        opacity: 1,
-        duration: 0
-    })
-    .to(playVideoCover, {
-        dalay: -0.6,
-        height: 0,
-        duration: 1,
-        ease: 'power3.out'
     });
 
 gsap.from(mainImage, {

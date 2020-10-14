@@ -6,7 +6,7 @@
         height: 100vh;
     }
     .banner-addition-bg {
-        background: $blue;
+        background: $orange;
         position: absolute;
         left: 0;
         right: 0;
@@ -82,43 +82,43 @@
                     display: inline-block;
                     height: 56px;
                     line-height: 56px;
-                    font-size: 1rem;
+                    font-size: 1.125rem;
                     padding: 0 32px;
                     text-decoration: none;
                     font-weight: 600;
                     color: $white;
                     background: $orange;
-                    border-radius: 100px;
+                    box-shadow: 9px 9px 0px $lOrange;
                 }
             }
-            .play-video {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                border-radius: 4px 4px 0 0;
-                overflow: hidden;
-                .cover {
-                    padding: 0;
-                    background: $lPink;
-                    right: 0;
-                    z-index: 9;
-                    height: 64px;
-                    opacity: 0;
-                }
-                span {
-                    opacity: 0;
-                    display: flex;
-                    align-items: center;
-                    height: 64px;
-                    padding: 0 32px;
-                    background: $white;
-                    font-weight: 600;
-                    color: $orange;
-                    img {
-                        margin-right: 1rem;
-                    }
-                }
-            }
+            // .play-video {
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     border-radius: 4px 4px 0 0;
+            //     overflow: hidden;
+            //     .cover {
+            //         padding: 0;
+            //         background: $lPink;
+            //         right: 0;
+            //         z-index: 9;
+            //         height: 64px;
+            //         opacity: 0;
+            //     }
+            //     span {
+            //         opacity: 0;
+            //         display: flex;
+            //         align-items: center;
+            //         height: 64px;
+            //         padding: 0 32px;
+            //         background: $white;
+            //         font-weight: 600;
+            //         color: $orange;
+            //         img {
+            //             margin-right: 1rem;
+            //         }
+            //     }
+            // }
         }
     }
     .image {
@@ -128,16 +128,17 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        left: 7%;
         .image-inner {
             img {
-                width: 550px;
+                width: 460px;
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 z-index: 9;
                 @media (max-width: $widescreen) {
-                    width: 500px;
+                    width: 430px;
                 }
             }
             .feature-banner {
