@@ -12,6 +12,7 @@ const playVideoCover = document.querySelector('.play-video .cover');
 const mainImage = document.querySelector('.image-inner img');
 const featureBanner = document.getElementById('featureBanner');
 const featureBannerGreen = document.getElementById('featureBannerGreen');
+const featureBannerYellow = document.getElementById('featureBannerYellow');
 
 const featuresContentTitle = document.querySelector('.features-content h3');
 const featuresContentText = document.querySelector('.features-content p');
@@ -66,7 +67,7 @@ gsap.from(mainImage, {
     ease: 'power3.out'
 });
 
-gsap.from([featureBanner, featureBannerGreen], {
+gsap.from([featureBannerYellow, featureBanner, featureBannerGreen], {
     delay: 2.4,
     x: -60,
     skewX: 6,

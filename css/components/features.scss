@@ -2,6 +2,31 @@
 .features {
     height: 100vh;
     background: $orange;
+    position: relative;
+    .features-bg {
+        position: absolute;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        img {
+            opacity: 42%;
+            height: 100%;
+        }
+        .feature-circle-bg {
+            width: 830px;
+            height: 830px;
+            background: $lOrange;
+            opacity: 40%;
+            border-radius: 50%;
+            position: absolute;
+            top: -200px;
+            right: -200px;
+        }
+    }
     .features-inner {
         margin-top: 33vh;
         display: flex;
@@ -24,7 +49,7 @@
                 line-height: 2.25rem;
                 font-weight: 300;
                 color: $white;
-                margin-bottom: 70px;
+                margin-bottom: 90px;
                 @media (max-width: $widescreen) {
                     padding-right: 60px;
                 }

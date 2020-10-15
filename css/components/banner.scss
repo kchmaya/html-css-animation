@@ -120,46 +120,56 @@
             //     }
             // }
         }
-    }
-    .image {
-        position: relative;
-        width: 40%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        left: 7%;
-        .image-inner {
-            img {
-                width: 460px;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                z-index: 9;
-                @media (max-width: $widescreen) {
-                    width: 430px;
-                }
-            }
-            .feature-banner {
-                position: absolute;
-                bottom: 286px;
-                left: -10px;
-                background: $lBlue;
-                color: $white;
-                height: 52px;
-                display: flex;
-                align-items: center;
-                padding: 0 32px;
-                border-radius: 4px;
-                font-weight: 600;
-                &.green {
-                    background: $green;
-                    right: 32px;
-                    left: auto;
-                    bottom: 116px;
+        .image {
+            position: relative;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            left: 7%;
+            .image-inner {
+                img {
+                    width: 460px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 9;
                     @media (max-width: $widescreen) {
-                        right: -24px;
+                        width: 430px;
+                    }
+                }
+                .feature-banner-yellow {
+                    width: 570px;
+                    height: 570px;
+                    background: $lYellow;
+                    opacity: 80%;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: 150px;
+                    right: 20px;
+                }
+                .feature-banner {
+                    position: absolute;
+                    bottom: 286px;
+                    left: -10px;
+                    background: $lBlue;
+                    color: $white;
+                    height: 52px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 32px;
+                    border-radius: 4px;
+                    font-weight: 600;
+                    &.green {
+                        background: $green;
+                        right: 32px;
+                        left: auto;
+                        bottom: 116px;
+                        @media (max-width: $widescreen) {
+                            right: -24px;
+                        }
                     }
                 }
             }

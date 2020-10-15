@@ -2,17 +2,29 @@
 .footer {
     height: 85vh;
     position: relative;
+    background: $yellow;
     @media (max-width: $widescreen) {
         height: 85vh;
     }
     .footer-bg {
-        background: $yellow;
         position: absolute;
+        overflow: hidden;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         height: 100%;
+        width: 100%;
+        .footer-circle-bg {
+            width: 700px;
+            height: 700px;
+            background: $lYellow;
+            opacity: 70%;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -50px;
+            left: -300px;
+        }
     }
     .footer-inner {
         width: 100%;
