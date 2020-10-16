@@ -126,7 +126,7 @@
             height: 100%;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            // align-items: flex-end;
             left: 7%;
             .image-inner {
                 img {
@@ -150,8 +150,54 @@
                     bottom: 150px;
                     right: 20px;
                 }
+                .decoration-dots-white {
+                    position: absolute;
+                    z-index: 8;
+                    img {
+                        top: 145px;
+                        left: -350px;
+                        width: 270px;
+                    }
+                }
+                .decoration-dots-green {
+                    position: absolute;
+                    z-index: 8;
+                    img {
+                        top: 335px;
+                        left: -450px;
+                        width: 320px;
+                    }
+                }
+                .decoration-dots-white-2 {
+                    position: absolute;
+                    z-index: 7;
+                    img {
+                        top: 630px;
+                        left: -620px;
+                        width: 420px;
+                    }
+                }
+                .decoration-dots-yellow {
+                    position: absolute;
+                    z-index: 7;
+                    img {
+                        top: 510px;
+                        left: 5px;
+                        width: 235px;
+                    }
+                }
+                .decoration-dots-blue {
+                    position: absolute;
+                    z-index: 7;
+                    img {
+                        top: 780px;
+                        left: -30px;
+                        width: 260px;
+                    }
+                }
                 .feature-banner {
                     position: absolute;
+                    z-index: 8;
                     bottom: 286px;
                     left: -10px;
                     background: $lBlue;

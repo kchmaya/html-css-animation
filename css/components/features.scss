@@ -26,6 +26,15 @@
             top: -200px;
             right: -200px;
         }
+        .feature-dots-bg {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            img {
+                opacity: 100%;
+                width: 280px;
+            }
+        }
     }
     .features-inner {
         margin-top: 33vh;

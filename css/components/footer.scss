@@ -25,6 +25,13 @@
             bottom: -50px;
             left: -300px;
         }
+        .footer-dots-bg {
+            position: absolute;
+            bottom: 120px;
+            img {
+                width: 250px;
+            }
+        }
     }
     .footer-inner {
         width: 100%;

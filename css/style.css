@@ -537,7 +537,6 @@ body {
       height: 100%;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
       left: 7%; }
       .banner .banner-inner .image .image-inner img {
         width: 460px;
@@ -558,8 +557,44 @@ body {
         position: absolute;
         bottom: 150px;
         right: 20px; }
+      .banner .banner-inner .image .image-inner .decoration-dots-white {
+        position: absolute;
+        z-index: 8; }
+        .banner .banner-inner .image .image-inner .decoration-dots-white img {
+          top: 145px;
+          left: -350px;
+          width: 270px; }
+      .banner .banner-inner .image .image-inner .decoration-dots-green {
+        position: absolute;
+        z-index: 8; }
+        .banner .banner-inner .image .image-inner .decoration-dots-green img {
+          top: 335px;
+          left: -450px;
+          width: 320px; }
+      .banner .banner-inner .image .image-inner .decoration-dots-white-2 {
+        position: absolute;
+        z-index: 7; }
+        .banner .banner-inner .image .image-inner .decoration-dots-white-2 img {
+          top: 630px;
+          left: -620px;
+          width: 420px; }
+      .banner .banner-inner .image .image-inner .decoration-dots-yellow {
+        position: absolute;
+        z-index: 7; }
+        .banner .banner-inner .image .image-inner .decoration-dots-yellow img {
+          top: 510px;
+          left: 5px;
+          width: 235px; }
+      .banner .banner-inner .image .image-inner .decoration-dots-blue {
+        position: absolute;
+        z-index: 7; }
+        .banner .banner-inner .image .image-inner .decoration-dots-blue img {
+          top: 780px;
+          left: -30px;
+          width: 260px; }
       .banner .banner-inner .image .image-inner .feature-banner {
         position: absolute;
+        z-index: 8;
         bottom: 286px;
         left: -10px;
         background: #89C5C6;
@@ -644,6 +679,13 @@ body {
       position: absolute;
       top: -200px;
       right: -200px; }
+    .features .features-bg .feature-dots-bg {
+      position: absolute;
+      top: 80px;
+      right: 0; }
+      .features .features-bg .feature-dots-bg img {
+        opacity: 100%;
+        width: 280px; }
   .features .features-inner {
     margin-top: 33vh;
     display: flex;
@@ -748,6 +790,11 @@ body {
       position: absolute;
       bottom: -50px;
       left: -300px; }
+    .footer .footer-bg .footer-dots-bg {
+      position: absolute;
+      bottom: 120px; }
+      .footer .footer-bg .footer-dots-bg img {
+        width: 250px; }
   .footer .footer-inner {
     width: 100%;
     height: 85vh;
