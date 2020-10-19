@@ -6,18 +6,41 @@ const h1Line = document.querySelectorAll('.line span');
 
 const contentP = document.querySelector('.content-inner p');
 const contentBtn = document.querySelector('.content-inner .btn-row');
-const playVideo = document.querySelector('.play-video span');
-const playVideoCover = document.querySelector('.play-video .cover');
 
 const mainImage = document.querySelector('.image-inner img');
-const featureBanner = document.getElementById('featureBanner');
-const featureBannerGreen = document.getElementById('featureBannerGreen');
+
+
 const featureBannerYellow = document.getElementById('featureBannerYellow');
+
+const dotsWhite = document.getElementById('decorationDotsWhite');
+const dotsGreen = document.getElementById('decorationDotsGreen');
+const dotsWhite2 = document.getElementById('decorationDotsWhite2');
+const dotsYellow = document.getElementById('decorationDotsYellow');
+const dotsBlue = document.getElementById('decorationDotsBlue');
+
+const orangeCircle = document.getElementById('decorationOrangeCircle');
+const yellowPlus = document.getElementById('decorationYellowPlus');
+const yellowCircle = document.getElementById('decorationYellowCircle');
+const blueZigzag = document.getElementById('decorationBlueZigzag');
+const dOrangeTriangle = document.getElementById('decorationDorangeTriangle');
+const orangeSquare = document.getElementById('decorationOrangeSquare');
+const orangeTriangle = document.getElementById('decorationOrangeTriangle');
+const blueSquare = document.getElementById('decorationBlueSquare');
+const orangeZigzag = document.getElementById('decorationOrangeZigzag');
+const yellowTriangle = document.getElementById('decorationYellowTriangle');
+const orangeCross = document.getElementById('decorationOrangeCross');
+
+const decorations = [featureBannerYellow, blueSquare, orangeCircle, yellowTriangle, orangeCross, orangeZigzag,
+    orangeTriangle, orangeSquare, dOrangeTriangle, blueZigzag, yellowCircle, yellowPlus, dotsBlue, dotsYellow,
+    dotsWhite2, dotsGreen, dotsWhite
+]
 
 const featuresContentTitle = document.querySelector('.features-content h3');
 const featuresContentText = document.querySelector('.features-content p');
 const featuresContentBtn = document.querySelector('.features-content .btn-row');
 const featuresList = document.querySelectorAll('.features-list li');
+
+
 
 
 const bannerTL = gsap.timeline();
@@ -67,7 +90,7 @@ gsap.from(mainImage, {
     ease: 'power3.out'
 });
 
-gsap.from([featureBannerYellow, featureBanner, featureBannerGreen], {
+gsap.from(decorations, {
     delay: 2.4,
     x: -60,
     skewX: 6,
@@ -104,10 +127,10 @@ featuresTl
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
-        triggerElement: "#featureBannerGreen",
+        triggerElement: "#btnRow",
         triggerHook: 0,
         reverse: false
     })
-    // .addIndicators()
+    .addIndicators()
     .setTween(featuresTl)
     .addTo(controller);
