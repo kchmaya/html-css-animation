@@ -41,6 +41,7 @@
         display: flex;
         justify-content: flex-end;
         .features-content {
+            z-index: 9;
             width: 50%;
             @media (max-width: $widescreen) {
                 width: 60%;

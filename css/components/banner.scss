@@ -2,6 +2,7 @@
 .banner {
     height: 100vh;
     position: relative;
+    overflow: hidden;
     @media (max-width: $widescreen) {
         height: 100vh;
     }
@@ -91,34 +92,6 @@
                     box-shadow: 9px 9px 0px $lOrange;
                 }
             }
-            // .play-video {
-            //     position: absolute;
-            //     bottom: 0;
-            //     left: 0;
-            //     border-radius: 4px 4px 0 0;
-            //     overflow: hidden;
-            //     .cover {
-            //         padding: 0;
-            //         background: $lPink;
-            //         right: 0;
-            //         z-index: 9;
-            //         height: 64px;
-            //         opacity: 0;
-            //     }
-            //     span {
-            //         opacity: 0;
-            //         display: flex;
-            //         align-items: center;
-            //         height: 64px;
-            //         padding: 0 32px;
-            //         background: $white;
-            //         font-weight: 600;
-            //         color: $orange;
-            //         img {
-            //             margin-right: 1rem;
-            //         }
-            //     }
-            // }
         }
         .image {
             position: relative;
@@ -126,7 +99,6 @@
             height: 100%;
             display: flex;
             justify-content: center;
-            // align-items: flex-end;
             left: 7%;
             .image-inner {
                 img {
@@ -159,11 +131,110 @@
                         width: 270px;
                     }
                 }
+                .decoration-orange-circle {
+                    position: absolute;
+                    z-index: 7;
+                    img {
+                        top: 130px;
+                        left: -400px;
+                        width: 120px;
+                    }
+                }
+                .decoration-yellow-plus {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 240px;
+                        left: -280px;
+                        width: 30px;
+                    }
+                }
+                .decoration-yellow-circle {
+                    position: absolute;
+                    z-index: 10;
+                    img {
+                        top: 540px;
+                        left: -220px;
+                        width: 40px;
+                    }
+                }
+                .decoration-blue-zigzag {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 310px;
+                        left: 100px;
+                        width: 130px;
+                    }
+                }
+                .decoration-dOrange-triangle {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 390px;
+                        left: 200px;
+                        width: 40px;
+                    }
+                }
+                .decoration-orange-square {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 500px;
+                        left: 210px;
+                        width: 100px;
+                    }
+                }
+                .decoration-orange-triangle {
+                    position: absolute;
+                    z-index: 6;
+                    img {
+                        top: 550px;
+                        left: 150px;
+                        width: 300px;
+                    }
+                }
+                .decoration-blue-square {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 700px;
+                        left: 90px;
+                        width: 50px;
+                    }
+                }
+                .decoration-orange-zigzag {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 610px;
+                        left: -320px;
+                        width: 130px;
+                    }
+                }
+                .decoration-yellow-triangle {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 760px;
+                        left: -375px;
+                        width: 90px;
+                    }
+                }
+                .decoration-orange-cross {
+                    position: absolute;
+                    z-index: 9;
+                    img {
+                        top: 850px;
+                        left: -160px;
+                        width: 30px;
+                    }
+                }
                 .decoration-dots-green {
                     position: absolute;
                     z-index: 8;
                     img {
-                        top: 335px;
+                        top: 315px;
                         left: -450px;
                         width: 320px;
                     }
@@ -172,8 +243,8 @@
                     position: absolute;
                     z-index: 7;
                     img {
-                        top: 630px;
-                        left: -620px;
+                        top: 650px;
+                        left: -600px;
                         width: 420px;
                     }
                 }

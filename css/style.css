@@ -452,7 +452,8 @@ body {
 
 .banner {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media (max-width: 1440px) {
     .banner {
       height: 100vh; } }
@@ -564,19 +565,96 @@ body {
           top: 145px;
           left: -350px;
           width: 270px; }
+      .banner .banner-inner .image .image-inner .decoration-orange-circle {
+        position: absolute;
+        z-index: 7; }
+        .banner .banner-inner .image .image-inner .decoration-orange-circle img {
+          top: 130px;
+          left: -400px;
+          width: 120px; }
+      .banner .banner-inner .image .image-inner .decoration-yellow-plus {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-yellow-plus img {
+          top: 240px;
+          left: -280px;
+          width: 30px; }
+      .banner .banner-inner .image .image-inner .decoration-yellow-circle {
+        position: absolute;
+        z-index: 10; }
+        .banner .banner-inner .image .image-inner .decoration-yellow-circle img {
+          top: 540px;
+          left: -220px;
+          width: 40px; }
+      .banner .banner-inner .image .image-inner .decoration-blue-zigzag {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-blue-zigzag img {
+          top: 310px;
+          left: 100px;
+          width: 130px; }
+      .banner .banner-inner .image .image-inner .decoration-dOrange-triangle {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-dOrange-triangle img {
+          top: 390px;
+          left: 200px;
+          width: 40px; }
+      .banner .banner-inner .image .image-inner .decoration-orange-square {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-orange-square img {
+          top: 500px;
+          left: 210px;
+          width: 100px; }
+      .banner .banner-inner .image .image-inner .decoration-orange-triangle {
+        position: absolute;
+        z-index: 6; }
+        .banner .banner-inner .image .image-inner .decoration-orange-triangle img {
+          top: 550px;
+          left: 150px;
+          width: 300px; }
+      .banner .banner-inner .image .image-inner .decoration-blue-square {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-blue-square img {
+          top: 700px;
+          left: 90px;
+          width: 50px; }
+      .banner .banner-inner .image .image-inner .decoration-orange-zigzag {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-orange-zigzag img {
+          top: 610px;
+          left: -320px;
+          width: 130px; }
+      .banner .banner-inner .image .image-inner .decoration-yellow-triangle {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-yellow-triangle img {
+          top: 760px;
+          left: -375px;
+          width: 90px; }
+      .banner .banner-inner .image .image-inner .decoration-orange-cross {
+        position: absolute;
+        z-index: 9; }
+        .banner .banner-inner .image .image-inner .decoration-orange-cross img {
+          top: 850px;
+          left: -160px;
+          width: 30px; }
       .banner .banner-inner .image .image-inner .decoration-dots-green {
         position: absolute;
         z-index: 8; }
         .banner .banner-inner .image .image-inner .decoration-dots-green img {
-          top: 335px;
+          top: 315px;
           left: -450px;
           width: 320px; }
       .banner .banner-inner .image .image-inner .decoration-dots-white-2 {
         position: absolute;
         z-index: 7; }
         .banner .banner-inner .image .image-inner .decoration-dots-white-2 img {
-          top: 630px;
-          left: -620px;
+          top: 650px;
+          left: -600px;
           width: 420px; }
       .banner .banner-inner .image .image-inner .decoration-dots-yellow {
         position: absolute;
@@ -691,6 +769,7 @@ body {
     display: flex;
     justify-content: flex-end; }
     .features .features-inner .features-content {
+      z-index: 9;
       width: 50%; }
       @media (max-width: 1440px) {
         .features .features-inner .features-content {
@@ -832,7 +911,7 @@ body {
           text-decoration: none;
           text-transform: uppercase;
           font-weight: 600; }
-          .footer .footer-inner .footer-content .footer-list .btn-row a img {
+          .footer .footer-inner .footer-content .footer-list .btn-row a i {
             margin-left: 100px; }
 
 body {
