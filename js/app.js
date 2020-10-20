@@ -107,23 +107,15 @@ gsap.from(decorations, {
 const featuresTl = gsap.timeline();
 
 featuresTl
-    .from([featuresContentTitle, featuresContentText, featuresContentBtn], {
-        opacity: 0,
-        y: 40,
-        duration: 0.6,
-        ease: "powe3.out",
-        stagger: {
-            amount: 0.2
-        }
-    })
+
     .from(featurePattern, {
-        delay: -0.6,
+        delay: 0,
         opacity: 0,
         x: -60,
         duration: 0.8,
         ease: "power3.out",
         stagger: {
-            amount: 0.4
+            amount: 0.2
         }
     })
     .from([featureCircleBg, featureDotsBg], {
@@ -134,6 +126,16 @@ featuresTl
         ease: "power3.out",
         stagger: {
             amount: 0.4
+        }
+    })
+    .from([featuresContentTitle, featuresContentText, featuresContentBtn], {
+        delay: -0.6,
+        opacity: 0,
+        x: 40,
+        duration: 0.6,
+        ease: "powe3.out",
+        stagger: {
+            amount: 0.2
         }
     });
 
@@ -151,7 +153,7 @@ footerTl
         }
     })
     .from(footerTitle, {
-        delay: -1,
+        delay: -0.8,
         opacity: 0,
         x: 60,
         duration: 0.6,
@@ -161,7 +163,7 @@ footerTl
         }
     })
     .from(footerMap, {
-        delay: -0.3,
+        delay: -0.6,
         opacity: 0,
         x: -40,
         duration: 0.8,
@@ -171,9 +173,9 @@ footerTl
         }
     })
     .from(footerBtn, {
-        delay: -1,
+        delay: -0.6,
         opacity: 0,
-        x: 40,
+        x: 60,
         duration: 0.6,
         ease: "power3.out",
         stagger: {
