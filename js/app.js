@@ -3,15 +3,11 @@ const header = document.getElementById('header');
 const banner = document.getElementById('bannerBg');
 const bannerAddition = document.getElementById('bannerBgAddition');
 const h1Line = document.querySelectorAll('.line span');
-
 const contentP = document.querySelector('.content-inner p');
 const contentBtn = document.querySelector('.content-inner .btn-row');
 
 const mainImage = document.querySelector('.image-inner img');
-
-
 const featureBannerYellow = document.getElementById('featureBannerYellow');
-
 const dotsWhite = document.getElementById('decorationDotsWhite');
 const dotsGreen = document.getElementById('decorationDotsGreen');
 const dotsWhite2 = document.getElementById('decorationDotsWhite2');
@@ -37,10 +33,16 @@ const decorations = [featureBannerYellow, blueSquare, orangeCircle, yellowTriang
 
 const featuresContentTitle = document.querySelector('.features-content h3');
 const featuresContentText = document.querySelector('.features-content p');
-const featuresContentBtn = document.querySelector('.features-content .btn-row');
-const featuresList = document.querySelectorAll('.features-list li');
+const featuresContentBtn = document.getElementById('featureBtn');
+const featurePattern = document.querySelector('.features-bg img');
+const featureCircleBg = document.getElementById('featureCircleBg');
+const featureDotsBg = document.getElementById('featureDotsBg');
 
-
+const footerCircleBg = document.getElementById('footerCircleBg');
+const footerDotsBg = document.getElementById('footerDotsBg');
+const footerMap = document.querySelector('.footer-map');
+const footerTitle = document.querySelector('.footer-list h3');
+const footerBtn = document.querySelector('.footer-list .btn-row');
 
 
 const bannerTL = gsap.timeline();
@@ -114,10 +116,64 @@ featuresTl
             amount: 0.2
         }
     })
-    .from(featuresList, {
-        delay: -0.4,
+    .from(featurePattern, {
+        delay: -0.6,
         opacity: 0,
-        y: 40,
+        x: -60,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: {
+            amount: 0.4
+        }
+    })
+    .from([featureCircleBg, featureDotsBg], {
+        delay: -1,
+        opacity: 0,
+        x: 60,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: {
+            amount: 0.4
+        }
+    });
+
+const footerTl = gsap.timeline();
+
+footerTl
+    .from([footerCircleBg, footerDotsBg], {
+        delay: 0,
+        opacity: 0,
+        x: -60,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: {
+            amount: 0.4
+        }
+    })
+    .from(footerTitle, {
+        delay: -1,
+        opacity: 0,
+        x: 60,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: {
+            amount: 0.4
+        }
+    })
+    .from(footerMap, {
+        delay: -0.3,
+        opacity: 0,
+        x: -40,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: {
+            amount: 0.4
+        }
+    })
+    .from(footerBtn, {
+        delay: -1,
+        opacity: 0,
+        x: 40,
         duration: 0.6,
         ease: "power3.out",
         stagger: {
@@ -131,6 +187,16 @@ const scene = new ScrollMagic.Scene({
         triggerHook: 0,
         reverse: false
     })
-    .addIndicators()
+    // .addIndicators()
     .setTween(featuresTl)
+    .addTo(controller);
+
+const controller2 = new ScrollMagic.Controller();
+const scene2 = new ScrollMagic.Scene({
+        triggerElement: "#featureBtn",
+        triggerHook: 0,
+        reverse: false
+    })
+    // .addIndicators()
+    .setTween(footerTl)
     .addTo(controller);
